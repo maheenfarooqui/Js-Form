@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color:  #17181A;
+}
+h1{
+    font-size: 40px;
+    color:  #FF9500;
+    text-align: center;
+    margin-top: 20px;
+}
+form{
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    text-align: center;
+    width: 400px;
+    margin: 50px auto;
+}
+form input{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+form input:hover{
+    border-color: #FF9500;
+}
+form input:focus{
+    border-color: #FF9500;
+}
+form button{
+    width: 60%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    background: #FF9500;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+form button:hover{
+    background:#17181A;
+}
+.cardBox{
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    width: 400px;
+}
+.cardBox h3{
+    font-size: 30px;
+    color: #FF9500;
+}
+.card{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    text-align: left;
+    width: 100%;
+    margin: 20px auto;
+    color: #17181A;
+}
+.card p{
+    font-size: 20px;
+    margin: 10px 0;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <h1>Student Form</h1>
+    <form action="">
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <input type="text" id="fName" placeholder="Enter your father name" required>
+        <input type="text" id="email" name="email" placeholder="Enter your email" required>
+        <input type="number" id="cnic" name="number" placeholder="Enter your CNIC number" required>
+        <input type="date" id="dob" name ="dob" placeholder="Enter your DOB" required>
+        <div class="buttons"><button>preview</button>
+         <button type="button" onclick="sumbitForm()">Submit</button></div>
+
+    </form>
+    <div class="cardBox">
+        <h3>Student Card</h3>
+        <div class="card">
+            <p class="name">Full Name:</p>
+            <p class="email">Email:</p>
+            <p class="cnic">CNIC:</p>
+            <p class="dob">DOB:</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="app.js"></script>
+</body>
+</html>
