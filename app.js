@@ -46,19 +46,23 @@ if(userName === "" && userCnic === "" && userDob === "" && userEmail === "" && f
 
 }
 
-function preview(){
+function preview() {
+  var userName = document.getElementById("name").value;
+  var fatherName = document.getElementById("fName").value;
+  var userEmail = document.getElementById("email").value;
+  var userCnic = document.getElementById("cnic").value;
+  var userDob = document.getElementById("dob").value;
 
-    var userName =document.getElementById("name").value;
-    var fatherName =document.getElementById("fName").value;
-    var userEmail =document.getElementById("email").value;
-    var userCnic =document.getElementById("cnic").value;
-    var userDob = document.getElementById("dob").value;
-    
-    document.getElementById("card").style.display = "block";
-    document.getElementById("uName").innerHTML = `Full Name: ${userName} ${fatherName}`;
-    document.getElementById("uemail").innerHTML = `Email: ${userEmail}`;
-    document.getElementById("ucnic").innerHTML = `CNIC: ${userCnic}`;
-    document.getElementById("udob").innerHTML =`DOB: ${userDob}`;
-    document.getElementById("form").style.display = "none";
+  document.getElementById("card").style.display = "block";
 
+  document.getElementById("uName").innerHTML =
+    `Full Name: ${userName} ${fatherName}`;
+  document.getElementById("uemail").innerHTML =
+    `Email: ${userEmail}`;
+  document.getElementById("ucnic").innerHTML =
+    `CNIC: ${userCnic}`;
+  document.getElementById("udob").innerHTML =
+    `DOB: ${userDob}`;
+
+  document.getElementById("form").style.display = "none";
 }
