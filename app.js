@@ -1,20 +1,25 @@
- 
-function sumbitForm(){
-    var userName =document.getElementById("name").value;
-    var fatherName =document.getElementById("fName").value;
-    var userEmail =document.getElementById("email").value;
-    var userCnic =document.getElementById("cnic").value;
-    var userDob = document.getElementById("dob").value;
-   
-if(userName === "" && userCnic === "" && userDob === "" && userEmail === "" && fatherName === "" ){
+function sumbitForm() {
+  var userName = document.getElementById("name").value;
+  var fatherName = document.getElementById("fName").value;
+  var userEmail = document.getElementById("email").value;
+  var userCnic = document.getElementById("cnic").value;
+  var userDob = document.getElementById("dob").value;
+
+  if (
+    userName === "" &&
+    userCnic === "" &&
+    userDob === "" &&
+    userEmail === "" &&
+    fatherName === ""
+  ) {
     Swal.fire({
       icon: "error",
       title: "Oops...",
       text: "fill the form",
       timer: 1500,
     });
-}
-    if (userEmail.length > 30) {
+  }
+  if (userEmail.length > 30) {
     Swal.fire({
       icon: "error",
       title: "Oops...",
@@ -27,23 +32,21 @@ if(userName === "" && userCnic === "" && userDob === "" && userEmail === "" && f
       icon: "error",
       title: "Oops...",
       text: "CNIC should be 14 characters long",
-    });}
-    else{
-        Swal.fire({
-  icon: "success",
-  title: "Your form has been sumbit",
-});
-    }
-  
+    });
+  } else {
+    Swal.fire({
+      icon: "success",
+      title: "Your form has been sumbit",
+    });
+  }
 
-    
-    document.getElementById("card").style.display = "block";
-    document.getElementById("uName").innerHTML = `Full Name: ${userName} ${fatherName}`;
-    document.getElementById("uemail").innerHTML = `Email: ${userEmail}`;
-    document.getElementById("ucnic").innerHTML = `CNIC: ${userCnic}`;
-    document.getElementById("udob").innerHTML =`DOB: ${userDob}`;
-    document.getElementById("form").style.display = "none"
-
+  document.getElementById("card").style.display = "block";
+  document.getElementById("uName").innerHTML =
+    `Full Name: ${userName} ${fatherName}`;
+  document.getElementById("uemail").innerHTML = `Email: ${userEmail}`;
+  document.getElementById("ucnic").innerHTML = `CNIC: ${userCnic}`;
+  document.getElementById("udob").innerHTML = `DOB: ${userDob}`;
+  document.getElementById("form").style.display = "none";
 }
 
 function preview() {
@@ -57,12 +60,9 @@ function preview() {
 
   document.getElementById("uName").innerHTML =
     `Full Name: ${userName} ${fatherName}`;
-  document.getElementById("uemail").innerHTML =
-    `Email: ${userEmail}`;
-  document.getElementById("ucnic").innerHTML =
-    `CNIC: ${userCnic}`;
-  document.getElementById("udob").innerHTML =
-    `DOB: ${userDob}`;
+  document.getElementById("uemail").innerHTML = `Email: ${userEmail}`;
+  document.getElementById("ucnic").innerHTML = `CNIC: ${userCnic}`;
+  document.getElementById("udob").innerHTML = `DOB: ${userDob}`;
 
   document.getElementById("form").style.display = "none";
 }

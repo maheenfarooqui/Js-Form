@@ -34,8 +34,9 @@ form input{
 form input:hover{
     border-color: #FF9500;
 }
-form input:focus{
-    border-color: #FF9500;
+form input:focus {
+  border-color: #FF9500;
+  outline: none;
 }
 form button{
     width: 60%;
