@@ -64,6 +64,7 @@ form button:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: #fff;
     width: 400px;
+    display: none;
 }
 .cardBox h3{
     font-size: 30px;

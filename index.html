@@ -9,23 +9,23 @@
 </head>
 <body>
     <h1>Student Form</h1>
-    <form action="">
+    <form id="form">
         <input type="text" id="name" name="name" placeholder="Enter your name" required>
         <input type="text" id="fName" placeholder="Enter your father name" required>
         <input type="text" id="email" name="email" placeholder="Enter your email" required>
         <input type="number" id="cnic" name="number" placeholder="Enter your CNIC number" required>
         <input type="date" id="dob" name ="dob" placeholder="Enter your DOB" required>
-        <div class="buttons"><button>preview</button>
+        <div class="buttons"><button onclick="preview()">Preview</button>
          <button type="button" onclick="sumbitForm()">Submit</button></div>
 
     </form>
-    <div class="cardBox">
+    <div class="cardBox" id="card">
         <h3>Student Card</h3>
         <div class="card">
-            <p class="name">Full Name:</p>
-            <p class="email">Email:</p>
-            <p class="cnic">CNIC:</p>
-            <p class="dob">DOB:</p>
+            <p id="uName"></p>
+            <p id="uemail"></p>
+            <p id="ucnic"></p>
+            <p id="udob"></p>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
