@@ -8,7 +8,8 @@
    
 </head>
 <body>
-    <h1>Student Form</h1>
+    <div id="formBox">
+        <h1>Student Form</h1>
     <form id="form">
         <input type="text" id="name" name="name" placeholder="Enter your name" required>
         <input type="text" id="fName" placeholder="Enter your father name" required>
@@ -19,6 +20,7 @@
          <button type="button" onclick="sumbitForm()">Submit</button></div>
 
     </form>
+    </div>
     <div class="cardBox" id="card">
         <h3>Student Card</h3>
         <div class="card">
@@ -27,6 +29,7 @@
             <p id="ucnic"></p>
             <p id="udob"></p>
         </div>
+        <p id="back" onclick="backToForm()">back to Form</p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="app.js"></script>

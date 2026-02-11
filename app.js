@@ -39,14 +39,12 @@ function sumbitForm() {
       title: "Your form has been sumbit",
     });
   }
-
-  document.getElementById("card").style.display = "block";
-  document.getElementById("uName").innerHTML =
-    `Full Name: ${userName} ${fatherName}`;
-  document.getElementById("uemail").innerHTML = `Email: ${userEmail}`;
-  document.getElementById("ucnic").innerHTML = `CNIC: ${userCnic}`;
-  document.getElementById("udob").innerHTML = `DOB: ${userDob}`;
-  document.getElementById("form").style.display = "none";
+ document.getElementById("name").value="";
+document.getElementById("fName").value="";
+  document.getElementById("email").value="";
+  document.getElementById("cnic").value="";
+  document.getElementById("dob").value="";
+  
 }
 
 function preview() {
@@ -63,6 +61,9 @@ function preview() {
   document.getElementById("uemail").innerHTML = `Email: ${userEmail}`;
   document.getElementById("ucnic").innerHTML = `CNIC: ${userCnic}`;
   document.getElementById("udob").innerHTML = `DOB: ${userDob}`;
-
-  document.getElementById("form").style.display = "none";
+  document.getElementById("formBox").style.display ="none"
+}
+function backToForm(){
+ document.getElementById("formBox").style.display ="block"
+ document.getElementById("card").style.display = "none";
 }
